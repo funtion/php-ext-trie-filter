@@ -35,6 +35,7 @@ trie_filter_search_all，一次返回所有的命中词;修复内存泄露
 然后修改php.ini，增加一行：extension=trie_filter.so，然后重启PHP。
 
 ## 使用示例
+```php
 	<?php
 	$arrWord = array('word1', 'word2', 'word3');
 	$resTrie = trie_filter_new(); //create an empty trie tree
@@ -57,6 +58,7 @@ trie_filter_search_all，一次返回所有的命中词;修复内存泄露
 	print_r($arrRet); //Array()
 
 	trie_filter_free($resTrie);
+```
 
 # PHP版本
 
